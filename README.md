@@ -14,7 +14,7 @@ The **Disaster Alert and Response System** is a comprehensive web application de
 - 📊 **Interactive Charts**: Visualize weather and disaster data using **Chart.js**.
 - 🔄 **Machine Learning Model**: Predict earthquake events based on historical data.
 
-##**Technology Stack**
+**Technology Stack**
 
 - **Frontend:** HTML, CSS, JS, Chart.js
 - **Backend:** FastAPI, Python
