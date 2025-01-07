@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background: #D8AA96;
+}
+
+.report-form {
+  align-items: center;
+  background: #D8AA96;
+  color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100%;
+  justify-items: center;
+}
+
+.emergency-container {
+  display: grid;
+  grid-template-areas: "left right";
+  max-width: 900px;
+}
+
+.left-container {
+  background: #807182;
+  overflow: hidden;
+  padding: 40px 0 0 0;
+  position: relative;
+  text-align: center;
+  width: 370px;
+}
+.left-container h1 {
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  font-size: 24px;
+}
+.left-container h1 i {
+  background: #F7B1AB;
+  border-radius: 50%;
+  color: #807182;
+  font-size: 24px;
+  margin-right: 5px;
+  padding: 10px;
+  transform: rotate(-45deg);
+}
+.left-container .emergency-icon {
+  top: 30%;
+  position: absolute;
+  text-align: center;
+}
+.left-container .emergency-icon:before {
+  background: #807182;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.left-container img {
+  width: 70%;
+}
+
+.right-container {
+  background: #f9c7c2;
+  display: grid;
+  grid-template-areas: "." "." ;
+  width: 500px;
+}
+.right-container h1 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 28px;
+  font-weight: 600;
+}
+.right-container .set {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.right-container input, .right-container textarea {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  padding-left: 5px;
+  width: 420px;
+}
+.right-container textarea {
+  height: 100px;
+}
+.right-container input, .right-container textarea, .right-container label {
+  color: rgba(0, 0, 0, 0.8);
+}
+.right-container header {
+  padding: 40px;
+}
+.right-container footer {
+  align-items: center;
+  background: #f9c7c2;
+  display: grid;
+  padding: 5px 40px;
+}
+.right-container footer button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 38px;
+  line-height: 38px;
+  width: 100px;
+  border-radius: 19px;
+  font-family: "Montserrat", sans-serif;
+}
+.right-container footer #back {
+  background: #fff;
+  transition: 0.2s all ease-in-out;
+}
+.right-container footer #back:hover {
+  background: #171A2B;
+  color: white;
+}
+.right-container footer #submit {
+  background: #807182;
+  border: 1px solid transparent;
+  color: #fff;
+}
+.right-container footer #submit:hover {
+  background: #171A2B;
+}
+
+.set label {
+  display: block;
+  margin-bottom: 5px;
+}

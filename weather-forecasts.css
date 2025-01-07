@@ -1,0 +1,407 @@
+.intro {
+  height: 318px;
+  background-image: url(./assets/weather-forecast-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.intro h1 {
+  color: #eb6e4b;
+  font-family: "Raleway", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 700 !important;
+  font-style: normal;
+  font-size: 45px;
+}
+.intro h2 {
+  color: white;
+  font-family: "Raleway", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 700 !important;
+  font-style: normal;
+  font-size: 25px;
+}
+.focus {
+  margin: 0 15%;
+  padding: 8% 0;
+}
+
+.break {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%;
+}
+
+.search-box-new {
+  width: 350px;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  outline: none;
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.search-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #616163;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s;
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.search-button:hover {
+  background-color: #616163;
+}
+
+.toggle-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow: hidden; /* Ensures highlight stays within container bounds */
+}
+
+.toggle-btn {
+  position: relative;
+  z-index: 1; /* Buttons appear above the highlight */
+  padding: 3px 10px;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  outline: none;
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+}
+
+.toggle-btn.active {
+  color: #000; /* Highlighted button text color */
+}
+
+.toggle-btn:hover {
+  color: #555;
+}
+
+.highlight {
+  position: absolute;
+  z-index: 0; /* Highlight appears below the buttons */
+  top: 0;
+  left: 0;
+  height: 100%; /* Matches container height */
+  width: 50%; /* Initially spans one button */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 1s ease, width 1s ease;
+}
+
+#button1 {
+  border-radius: 5px 0 0 5px;
+}
+
+#button2 {
+  border-radius: 0 5px 5px 0;
+}
+
+.near_me {
+  font-size: 20px !important;
+  font-weight: 100 !important;
+  padding: 5px;
+}
+
+.wind {
+  font-size: 13px !important;
+  font-weight: 100 !important;
+}
+
+.wind_2 {
+  font-size: 13px !important;
+  font-weight: 100 !important;
+  margin-left: 20px;
+}
+
+.locate-me {
+  background-color: transparent;
+  margin: 2%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.locate-me:hover {
+  background-color: white;
+}
+
+.forecast {
+  display: none;
+  margin: 3% 10% 3% 15%;
+}
+
+.cloud {
+  margin-top: -15px;
+}
+
+#date-time {
+  color: #eb6e4b;
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+#city-name {
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 25px !important;
+  font-weight: 700 !important;
+}
+
+#temp {
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 100 !important;
+}
+
+#feels-like,
+#weather-description {
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+#dew-point {
+  margin-left: 25px;
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+#visibility,
+#humidity,
+#pressure,
+#wind-speed {
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.line {
+  border-left: 2px solid #eb6e4b;
+  height: 70px;
+  margin: 0 20px 0 0;
+}
+
+.map_2 {
+  border-radius: 5px;
+  margin-left: 10%;
+}
+
+.forecast-day {
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.forecast-day h3 {
+  margin: 0;
+}
+
+.forecast-day p {
+  margin: 5px 0;
+}
+
+.forecast-day .expandable-content {
+  display: none; /* Hide the expandable content initially */
+  margin-top: 10px;
+  margin-left: 15%;
+}
+
+.forecast-day button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.forecast-day button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the forecast day summary */
+.forecast-summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px 0;
+}
+
+.forecast-summary.show {
+  display: block !important;
+}
+
+.show {
+    display: block !important;
+  }
+
+.forecast-summary span {
+  font-size: 16px; /* Adjust font size as needed */
+  white-space: nowrap;
+}
+
+/* Initially hide the expandable content */
+.expandable-content {
+  margin-top: 10px;
+}
+
+.hidden {
+    display: none !important; /* Forcefully hide elements without affecting other styles */
+}
+
+/* Triangle icon styling and rotation when expanded */
+.expand-toggle {
+  cursor: pointer;
+  font-size: 10px !important;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 10%;
+}
+
+.desc {
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  position: absolute;
+  right: 12%;
+}
+
+.tempFormat {
+  position: absolute;
+  right: 20%;
+}
+
+.icon {
+  position: absolute;
+  right: 24%;
+}
+
+.dateTimeforcast {
+  margin-left: 15% !important;
+}
+
+/* When the section is expanded, rotate the triangle */
+.expand-toggle.rotated {
+  transform: rotate(180deg); /* Rotate the triangle upwards */
+}
+
+/* Styling for each row of the forecast details */
+.expandable-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.expandable-content th,
+.expandable-content td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+canvas {
+  margin: 0px auto;
+  display: block;
+  height: 320px !important;
+}
+
+.myCanvas::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+.extended-forecast {
+  display: none;
+  margin: 2% 12%;
+}
+
+.hourlyforecast {
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+.day8 {
+  font-family: "Space Grotesk", Arial, sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  margin-left: 15%;
+  margin-bottom: 25px;
+}
+.phone-switch{
+  display: none;
+}
+
+/* for screens with width less than 480px */
+@media screen and (max-width: 480px) {
+  .map_2{
+    margin-top: 10%;
+    margin-left: 0;
+  }
+  .hourlyforecast{
+    margin-top: 5%;
+  }
+  .day8{
+    margin-left: 0;
+  }
+  .dateTimeforcast{
+    margin-left: 0 !important;
+  }
+  .tempFormat{
+    right: 40%;
+  }
+  .icon{
+    right: 55%;
+  }
+  .desc{
+    right: 15%;
+  }
+  .break{
+    display: block;
+  }
+  .search-container{
+    margin-right: 0;
+    padding-top: 5%;
+  }
+  .phone-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pc{
+    display: none;
+  }
+}

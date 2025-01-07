@@ -1,0 +1,250 @@
+body {
+    font-family: "Space Grotesk", Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    overflow-x: hidden;
+    transition: background-image 1s ease-in-out;
+}
+
+#tagline {
+    text-align: center;
+    font-family: "Raleway", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 500 !important;
+    font-style: normal;
+    margin-bottom: 1%;
+}
+
+#tagline_clone {
+    text-align: center;
+    font-family: "Raleway", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 500 !important;
+    font-style: normal;
+    margin-top: 430px;
+    margin-bottom: -535px;
+}
+
+.navbar {
+    background-color: #48484A;
+}
+
+.logo {
+    width: 45px;
+    margin-left: 20%;
+}
+
+.brand {
+    color: white !important;
+    font-size: 16px !important;
+    margin: 5% 0 0 5%;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.search-box {
+    background-color: transparent !important;
+    font-family: "Space Grotesk", Arial, sans-serif !important;
+    border: none !important;
+    color: white !important;
+    width: 90% !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+.navbar input {
+    border: none !important;
+    border-radius: 0% !important;
+    padding: 5px !important;
+    width: 200px !important;
+    transition: border-bottom 0.3s ease !important;
+}
+
+.navbar input::placeholder{
+    color: white !important;
+}
+
+.navbar input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid white !important;
+}
+#cover{
+    margin-top: -535px;
+    transition-duration: 3.5s;
+    position: relative;
+    z-index: -10;
+}
+
+.first-box {
+    padding: 3% !important;
+}
+
+.map {
+    margin-top: 8%;
+    border-radius: 20px;
+}
+
+.inner-box {
+    display: none;
+    color: white;
+}
+
+.gap {
+    margin-left: 5%;
+}
+
+#suggestion-box {
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    width: 90%;
+    display: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%;
+    left: 8%;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+#suggestion-box div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+#suggestion-box div:last-child {
+    border-bottom: none;
+}
+
+#suggestion-box div:hover {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 1;
+    transition-duration: 10.5s;
+    margin-top: 535px;
+}
+
+.features .first-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.features .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.extra-features {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 1;
+}
+
+.extra-features .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.extra-features .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.feature-image {
+    height: 200px;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chat-mesages::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .chat-mesages {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .logo_bot {
+    width: 30px;
+}
+
+.send-button-bot{
+    width: 93%; padding: 10px; background: #0078D7; color: #fff; border: none;
+    position: absolute;
+    bottom: 3%;
+}
+.question-bot{
+    width: calc(100% - 20px); padding: 10px; border: 1px solid #ccc;
+    position: absolute;
+    bottom: 15%;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+/* for screens with width less than 480px */
+@media screen and (max-width: 480px) {
+    .features .first-line {
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    #tagline_clone {
+        margin-top: 425px;
+        margin-bottom: -545px;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    #tagline{
+        margin-bottom: 10%;
+    }
+    .d-flex{
+        visibility: hidden;
+        width: 10%;
+    }
+}
+
+/* for screens with width less than 400px */
+@media screen and (max-width: 400px) {
+    .features .first-line {
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-bottom: 10%;
+    }
+}
